@@ -22,7 +22,8 @@ def rmcol_datetime_unique1(dat, check_char_num = False): # add more datatime typ
             print('>>> There are {} variables have too many unique non-numberic values, which might cause the binning process slow. Please double check the following variables: \n{}'.format(len(char_cols_too_many_unique), ', '.join(char_cols_too_many_unique)))
             print('>>> Continue the binning process?')
             print('1: yes \n2: no \n')
-            cont = int(input("Selection: "))
+            cont = 1
+#             cont = int(input("Selection: "))
             while cont not in [1, 2]:
                 cont = int(input("Selection: "))
             if cont == 2:
