@@ -23,6 +23,7 @@ def rmcol_datetime_unique1(dat, check_char_num = False): # add more datatime typ
             print('>>> Continue the binning process?')
             print('1: yes \n2: no \n')
             cont = 1
+            print('selecting yes XD') 
 #             cont = int(input("Selection: "))
             while cont not in [1, 2]:
                 cont = int(input("Selection: "))
